@@ -7,4 +7,4 @@ Open CMD
 
 cd [Carpeta donde se quiere guardar]
 
-git clone 
+git clone https://github.com/BochaQAC/TPO-Fundamentos-de-programacion-UADE.git
