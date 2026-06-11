@@ -1,6 +1,6 @@
 import random
 def altaDePelicula(peliculas):
-    
+    #aaaa
     generosDisponibles = ["Accion","Aventura","Comedia","Drama","Ciencia Ficcion","Terror","Animacion","Documental"]
 
     estadosDisponibles = ["En cartelera","Proximo estreno","Funcion especial","Finalizada"]
