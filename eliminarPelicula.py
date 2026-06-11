@@ -1,4 +1,7 @@
 def eliminarPelicula(peliculas):
+    '''Autor princiapl: Gennaro Nicolas Pocetti
+    Función que permite eliminar una película 'finalizada' del sistema, solicitando al usuario el título de la película a eliminar.'''
+    
     if len(peliculas) == 0:
         print("No hay películas registradas.")
         return

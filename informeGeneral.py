@@ -1,4 +1,6 @@
 def informeGeneral(peliculas):
+    '''Autor princiapl: Bautista Miano Gaibisso
+    Función que muestra un informe general de las películas registradas en el sistema, ordenadas por cantidad de entradas vendidas de forma descendente. En caso de empate, se ordenan alfabéticamente por título.'''
 
     if len(peliculas) == 0:
         print("No hay películas registradas.")

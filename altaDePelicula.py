@@ -1,6 +1,8 @@
 import random
 def altaDePelicula(peliculas):
-    #aaaa
+    '''Autor princiapl: Felipe Antelo
+    Función que permite registrar una película en el sistema, solicitando al usuario los datos necesarios.'''
+    
     generosDisponibles = ["Accion","Aventura","Comedia","Drama","Ciencia Ficcion","Terror","Animacion","Documental"]
 
     estadosDisponibles = ["En cartelera","Proximo estreno","Funcion especial","Finalizada"]

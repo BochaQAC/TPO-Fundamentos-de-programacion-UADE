@@ -1,4 +1,7 @@
 def modificarPelicula(peliculas):
+    '''Autor princiapl: Alan Roberto Bernard
+    Función que permite modificar los datos de una película registrada en el sistema, solicitando al usuario el título de la película a modificar y los nuevos datos.'''
+
     if len(peliculas) == 0:
         print("No hay películas registradas.")
         return
