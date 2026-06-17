@@ -14,7 +14,7 @@ def altaDePelicula(peliculas):
 
     # Ingresar Título con validación de título único
     titulo = validar_string_no_vacio("Ingresar el titulo de la película: ")
-    while buscar_pelicula_por_titulo(peliculas, titulo) != -1:  # ← Usamos while sin return
+    while buscar_pelicula_por_titulo(peliculas, titulo) != -1:  
         titulo = input("El título ya existe. Ingrese un título diferente: ")
 
     # Ingresar Género
@@ -29,6 +29,10 @@ def altaDePelicula(peliculas):
     mostrar_lista_opciones(estadosDisponibles, "Estados disponibles")
     opEstado = validar_opcion(1, len(estadosDisponibles), "Seleccione estado: ")
     estado = estadosDisponibles[opEstado - 1]
+
+    if estado == "Finalizada":
+        print("La película se encuentra finalizada, no se registrará en el sistema.")
+        return
     
     # Ingresar Sala
     sala = validar_numero_positivo("Ingrese numero de sala: ")
