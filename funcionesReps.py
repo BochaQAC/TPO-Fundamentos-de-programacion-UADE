@@ -1,11 +1,31 @@
 '''Funciones de respaldo y reutilizadas'''
 
 def validar_opcion(minimo, maximo, mensaje="Seleccione una opción: "):
+    
     '''Valida que la opción ingresada esté dentro del rango permitido'''
-    opcion = int(input(mensaje))
+    opcion = input(mensaje)
+    
+    # Validar que sea un número
+    while not opcion.isdigit():
+        print(f"Opción inválida. Seleccione una opción válida entre {minimo} y {maximo}.")
+        opcion = input(mensaje)
+    
+    opcion = int(opcion)
+    
+    # Validar que esté en el rango
     while opcion < minimo or opcion > maximo:
-        opcion = int(input(f"Error. Seleccione una opción entre {minimo} y {maximo}: "))
+        print(f"Error. Seleccione una opción entre {minimo} y {maximo}.")
+        opcion = input(mensaje)
+        
+        # Validar nuevamente que sea número
+        while not opcion.isdigit():
+            print(f"Opción inválida. Seleccione una opción válida entre {minimo} y {maximo}.")
+            opcion = input(mensaje)
+        
+        opcion = int(opcion)
+    
     return opcion
+
 
 def validar_string_no_vacio(mensaje, mensaje_error="El campo no puede estar vacío."):
     '''Valida que el string ingresado no esté vacío'''
