@@ -16,9 +16,9 @@ def menuCine():
     print("5. Salir")
 
     opcion = int(input("Seleccione una opcion: "))
-    #if opcion != int:
-        #print("Error. Ingrese un número válido.")
-        #opcion = int(input("Seleccione una opcion: "))
+    while not opcion.isdigit():
+        print("Opción inválida. Seleccione una opción válida.")
+        opcion = int(input("Seleccione una opcion: "))
 
     while opcion < 1 or opcion > 5:
         opcion = int(input("Opción inválida. Seleccione una opción válida: "))
