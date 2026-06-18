@@ -37,7 +37,7 @@ def validar_string_no_vacio(mensaje, mensaje_error="El campo no puede estar vac√
 
 def validar_numero_positivo(mensaje, mensaje_error="Error. Ingrese un valor positivo: "):
     '''Valida que el n√∫mero ingresado sea positivo'''
-    valor = tipo(input(mensaje))
+    valor = input(mensaje)
     while not valor.isdigit or int(valor) <= 0:
         print(mensaje_error)
         valor = input(mensaje)
