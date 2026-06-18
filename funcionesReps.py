@@ -38,10 +38,13 @@ def validar_string_no_vacio(mensaje, mensaje_error="El campo no puede estar vac√
 def validar_numero_positivo(mensaje, mensaje_error="Error. Ingrese un valor positivo: "):
     '''Valida que el n√∫mero ingresado sea positivo'''
     valor = input(mensaje)
-    while not valor.isdigit or int(valor) <= 0:
+    
+    while not valor.isdigit() or int(valor) <= 0:
         print(mensaje_error)
         valor = input(mensaje)
-    return int(valor)
+
+    valor = int(valor)
+    return valor
 
 def validar_precio(mensaje="Ingrese valor promedio de la entrada: "):
     '''Valida que el precio ingresado no sea negativo'''
