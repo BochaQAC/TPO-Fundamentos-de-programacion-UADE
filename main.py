@@ -1,11 +1,12 @@
-import informeGeneral, altaDePelicula, eliminarPelicula, modificarPelicula, menucine, random 
+import informeGeneral, altaDePelicula, eliminarPelicula, modificarPelicula, menucine, peliculasPrecargadas,random 
 
 def main():
     
-    peliculas = [] 
 
+    
+    peliculas=peliculasPrecargadas.cargar_peliculas()
+    
     opcion = 0
-
 
 
     while opcion != 5:
