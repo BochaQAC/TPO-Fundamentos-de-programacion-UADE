@@ -49,7 +49,7 @@ def validar_numero_positivo(mensaje, mensaje_error="Error. Ingrese un valor posi
 def validar_precio(mensaje="Ingrese valor promedio de la entrada: "):
     '''Valida que el precio ingresado no sea negativo'''
     precio = float(input(mensaje))
-    while precio < 0:
+    while precio <= 0:
         precio = float(input("Error. Ingrese un precio válido: "))
     return precio
 
